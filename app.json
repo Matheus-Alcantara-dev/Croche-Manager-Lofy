@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Lofy's",
+    "slug": "croche-manager",
+    "version": "1.2.0",
+    "scheme": "crochemanager",
+    "icon": "./assets/images/lofy-icon.png",
+    "userInterfaceStyle": "light",
+    "ios": { "bundleIdentifier": "com.lofy.crochemanager", "supportsTablet": true },
+    "android": { "package": "com.lofy.crochemanager" },
+    "web": {
+      "favicon": "./assets/images/lofy-icon.png",
+      "output": "single",
+      "lang": "pt-BR",
+      "description": "Projetos e encomendas do ateliê Lofy's.",
+      "themeColor": "#634735"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      ["expo-image-picker", {
+        "photosPermission": "Permita o acesso às fotos para ilustrar produtos e projetos do ateliê.",
+        "cameraPermission": false,
+        "microphonePermission": false
+      }],
+      "expo-font",
+      "expo-sqlite"
+    ]
+  }
+}
